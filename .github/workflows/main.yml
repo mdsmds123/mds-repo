@@ -6,6 +6,14 @@ on:
   pull_request:
     branches: [ master, main ]
 
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+
 jobs:
   test:
     runs-on: ubuntu-latest
